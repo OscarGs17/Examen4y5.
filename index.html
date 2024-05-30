@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"> 
+<title>Catálogo</title>
+</head>
+<body>
+  <h1>Catálogo de Películas</h1>
+
+  <div id="game-board">
+    <div class="card" data-framework="pelicula1"><img class="front" src="imagenes/pelicula1.jpg" alt="Pelicula 1"></div>
+    <div class="card" data-framework="pelicula2"><img class="front" src="imagenes/pelicula2.png" alt="Pelicula 2"></div>
+    <div class="card" data-framework="pelicula3"><img class="front" src="imagenes/pelicula3.jpg" alt="Pelicula 3"></div>
+    <div class="card" data-framework="pelicula4"><img class="front" src="imagenes/pelicula4.jpg" alt="Pelicula 4"></div>
+    <div class="card" data-framework="pelicula5"><img class="front" src="imagenes/pelicula5.jpg" alt="Pelicula 5"></div>
+    <div class="card" data-framework="pelicula6"><img class="front" src="imagenes/pelicula6.jpg" alt="Pelicula 6"></div>
+    <div class="card" data-framework="pelicula7"><img class="front" src="imagenes/pelicula7.jpg" alt="Pelicula 7"></div>
+    <div class="card" data-framework="pelicula8"><img class="front" src="imagenes/pelicula8.jpg" alt="Pelicula 8"></div>
+    <div class="card" data-framework="pelicula9"><img class="front" src="imagenes/pelicula9.jpg" alt="Pelicula 9"></div>
+    <div class="card" data-framework="pelicula10"><img class="front" src="imagenes/pelicula10.jpg" alt="Pelicula 10"></div>
+  </div>
+
+  <div id="buttons">
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="genero" placeholder="Género">
+    <input type="text" id="año" placeholder="Año">
+    <button onclick="agregarPelicula()">Agregar Película</button>
+    <button onclick="quitarPelicula()">Quitar Película</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

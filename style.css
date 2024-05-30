@@ -1,0 +1,54 @@
+.card {
+  width: 159px;
+  height: 159px;
+  background-color: white;
+  border: 5px solid rgb(255, 17, 0);
+  border-radius: 4px;
+  margin: 30px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  max-width: 20%; /* Ancho máximo relativo al contenedor padre */
+  max-height: 20vw; /* Altura máxima relativa al ancho de la ventana gráfica */
+  position: relative; 
+}
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease; /* Transición suave al girar */
+}
+
+.card .back {
+  transform: rotateY(180deg); /* La cara trasera está inicialmente invertida */
+  opacity: 0; /* La imagen del reverso comienza invisible */
+}
+
+.card.flipped .front {
+  transform: rotateY(180deg); /* Gira la cara frontal */
+  opacity: 0; /* Oculta la imagen del frente cuando se voltea */
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg); /* Muestra la cara trasera */
+  opacity: 1; /* Muestra la imagen del reverso cuando se voltea */
+}
+h1{
+  
+
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+
+  
+ 
+}
+body {
+  background-image: url('imagenes/pelicula.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
